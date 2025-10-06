@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Library Manager</h1>
+
+    <div class="form-section">
+      <input type="text" id="bookTitle" placeholder="Book Title" />
+      <input type="text" id="bookAuthor" placeholder="Author Name" />
+      <input type="number" id="bookQuantity" placeholder="Quantity" />
+      <div class="btn-group">
+        <button id="addBtn">Add / Update Book</button>
+        <button id="removeBtn">Remove Book</button>
+        <button id="findBtn">Find Book</button>
+        <button id="resetBtn" class="danger">Reset Library</button>
+      </div>
+    </div>
+
+    <h2>Library Inventory</h2>
+    <div class="table-wrapper">
+      <table id="libraryTable">
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Author</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody id="libraryBody"></tbody>
+      </table>
+    </div>
+
+    <h2>Console Output</h2>
+    <div class="console" id="consoleOutput"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
